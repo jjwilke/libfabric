@@ -392,21 +392,7 @@ prov_install_man_pages=
 prov_dist_man_pages=
 EXTRA_DIST=
 
-include prov/sockets/Makefile.include
-include prov/udp/Makefile.include
-include prov/verbs/Makefile.include
-include prov/efa/Makefile.include
-include prov/usnic/Makefile.include
-include prov/psm/Makefile.include
-include prov/psm2/Makefile.include
-include prov/gni/Makefile.include
-include prov/rxm/Makefile.include
-include prov/mrail/Makefile.include
-include prov/rxd/Makefile.include
-include prov/bgq/Makefile.include
-include prov/shm/Makefile.include
-include prov/tcp/Makefile.include
-include prov/rstream/Makefile.include
+include prov/sstmac/Makefile.include
 include prov/hook/Makefile.include
 include prov/hook/perf/Makefile.include
 include prov/hook/hook_debug/Makefile.include

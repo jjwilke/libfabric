@@ -459,23 +459,7 @@ AC_CHECK_HEADERS_ONCE(elf.h sys/auxv.h)
 
 dnl Provider-specific checks
 FI_PROVIDER_INIT
-FI_PROVIDER_SETUP([psm])
-FI_PROVIDER_SETUP([psm2])
-FI_PROVIDER_SETUP([sockets])
-FI_PROVIDER_SETUP([verbs])
-FI_PROVIDER_SETUP([efa])
-dnl The usnic provider must be setup after the verbs provider.  See
-dnl prov/usnic/configure.m4 for details.
-FI_PROVIDER_SETUP([usnic])
-FI_PROVIDER_SETUP([gni])
-FI_PROVIDER_SETUP([udp])
-FI_PROVIDER_SETUP([tcp])
-FI_PROVIDER_SETUP([rxm])
-FI_PROVIDER_SETUP([mrail])
-FI_PROVIDER_SETUP([rxd])
-FI_PROVIDER_SETUP([bgq])
-FI_PROVIDER_SETUP([shm])
-FI_PROVIDER_SETUP([rstream])
+FI_PROVIDER_SETUP([sstmac])
 FI_PROVIDER_SETUP([perf])
 FI_PROVIDER_SETUP([hook_debug])
 FI_PROVIDER_FINI
